@@ -1,48 +1,30 @@
-# PicoVGA Sample Project
+# RP2040-TestPatternGenerator
 
-## About this Project
+This is a simple test pattern generator that runs on the RP2040 microcontroller. It uses the [PicoVGA cmake](https://github.com/codaris/picovga-cmake) library for outputting a 15kHz 240p RGBS signal via a VGA connector.
 
-This is a sample project for the [PicoVGA cmake](https://github.com/codaris/picovga-cmake) library to demonstrate a minimal project setup.  
+## How to Use
 
-## Installing the PicoVGA library
-
-1. Make sure you have the [Pico SDK](https://github.com/raspberrypi/pico-sdk) installed.
-
-2. Clone the PicoVGA repository  
-~~~
-git clone https://github.com/codaris/picovga-cmake.git
-~~~
-
-3. Set `PICOVGA_PATH` to the PicoVGA directory in your environment, or pass it (`-DPICOVGA_PATH=`) to cmake later.
-
-## Installation
-
-~~~
-git clone https://github.com/codaris/picovga-helloworld.git
-~~~
+1. Download the [latest release](https://github.com/nmur/RP2040-TestPatternGenerator/releases).
+2. Hold the BOOT button on the RP2040 device and connect it to your PC. A file browser window for the device should appear.
+3. Drag and drop the `tbd.uf2` file onto the device. It should automatically close when completed.
 
 ## Building
 
-Generate the make files by running CMake:
+1. Clone the PicoSDK and PicoVGA repositories:
+~~~
+git clone https://github.com/codaris/picovga-cmake.git
+git clone https://github.com/raspberrypi/pico-sdk
+~~~
 
+2. Set `PICOVGA_PATH` to the PicoVGA directory and the `PICOSDK_PATH` to the PicoSDK directory in your environment.
+
+3. Generate the make files by running CMake:
 ~~~
 cmake .
 ~~~
 
-Build the project:
-
+4. Build the project:
 ~~~
 make
 ~~~
 
-## The Files
-
-* `CMakeLists.txt` - This file contains the build instructions for this project and shows how to configure the project for the Pico SDK and for PicoVGA.
-
-* `pico_sdk_import.cmake` - This file is copied from the Pico SDK and helps CMake find the Pico SDK.
-
-* `picovga_import.cmake` - This file is copied from the PicoVGA library and helps CMake find the PicoVGA library
-
-* `src/vga_config.h` - This contains the PicoVGA library settings, such as the size of the render buffers. You don't usually have to change this file unless you want to change resolution or decrease the amount of RAM used.
-
-* `src/main.cpp` - The main source file.  Initializes the display and prints "Hello World".
