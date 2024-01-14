@@ -15,6 +15,7 @@ add_compile_options(-Wall -Wno-format -Wno-unused-function -Wno-maybe-uninitiali
 # Create executable with specified source files
 add_executable(RP2040-TestPatternGenerator
     src/main.cpp
+    img/monoscope.cpp
 )
 
 # If monitor requires vsync uncomment to set the vsync pin
@@ -26,6 +27,7 @@ add_picovga(RP2040-TestPatternGenerator)
 # for vga_config.h include
 target_include_directories(RP2040-TestPatternGenerator PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/src
+    ${CMAKE_CURRENT_LIST_DIR}/img
 )
 
 # Generate the uf2 output
