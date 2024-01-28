@@ -67,11 +67,11 @@
 //	GP6 ... VGA R1
 //	GP7 ... VGA R2
 //	GP8 ... VGA SYNC synchronization (inverted: negative SYNC=LOW=0x80, BLACK=HIGH=0x00)
-#define VGA_GPIO_FIRST	0	// first VGA GPIO
+#define VGA_GPIO_FIRST	7	// first VGA GPIO
 #define VGA_GPIO_NUM	9	// number of VGA GPIOs, including HSYNC and VSYNC
 #define VGA_GPIO_OUTNUM	8	// number of VGA color GPIOs, without HSYNC and VSYNC
 #define VGA_GPIO_LAST	(VGA_GPIO_FIRST+VGA_GPIO_NUM-1)	// last VGA GPIO
-#define VGA_GPIO_SYNC	8	// VGA SYNC GPIO
+#define VGA_GPIO_SYNC	15	// VGA SYNC GPIO
 
 // VGA PIO and state machines
 #define VGA_PIO		pio0	// VGA PIO
