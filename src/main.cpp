@@ -1,5 +1,6 @@
 #include "picovga.h"
 #include "img/monoscope.h"
+#include "img/grid.h"
 #include "lib/RP2040-Button/button.h"
 
 #define WIDTH	320		// screen width
@@ -15,7 +16,8 @@ void button_onchange(button_t *button_p){
     button_t *button = (button_t*)button_p;
     if(button->state) return;
 
-    DrawText(&Canvas, "Button Press!", (512-12*8*4)/2, (400-8*4)/2, COL_WHITE, FontBoldB8x16, 16, 4, 4);
+	PatternCanvas.img = (u8*)Grid;
+	DrawImg(&Canvas, &PatternCanvas, 0, 0, 0, 0, WIDTH, HEIGHT);
 }
 
 int main()

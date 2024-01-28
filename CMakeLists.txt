@@ -18,6 +18,7 @@ add_subdirectory(lib/RP2040-Button button)
 add_executable(RP2040-TestPatternGenerator
     src/main.cpp
     img/monoscope.cpp
+    img/grid.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
