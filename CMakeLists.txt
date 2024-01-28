@@ -12,11 +12,19 @@ pico_sdk_init()                 # Initialize Pico SDK
 
 add_compile_options(-Wall -Wno-format -Wno-unused-function -Wno-maybe-uninitialized)
 
+add_subdirectory(lib/RP2040-Button button)
+
 # Create executable with specified source files
 add_executable(RP2040-TestPatternGenerator
     src/main.cpp
     img/monoscope.cpp
+    img/grid.cpp
 )
+
+target_link_libraries(${PROJECT_NAME}
+        pico_stdlib
+        button
+        )
 
 # If monitor requires vsync uncomment to set the vsync pin
 #add_compile_definitions(VGA_GPIO_VSYNC=9)

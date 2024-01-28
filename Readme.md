@@ -32,3 +32,4 @@ make
 
 - Miroslav Nemecek (Panda38@seznam.cz) for their [PicoVGA library](https://github.com/Panda381/PicoVGA)
 - Wayne Venables (codaris) for their [PicoVGA fork](https://github.com/codaris/picovga-cmake)
+- Turi Scandurra for their [RP2040-Button library](https://github.com/TuriSc/RP2040-Button)

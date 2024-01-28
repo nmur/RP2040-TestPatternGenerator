@@ -1,0 +1,3 @@
+[submodule "lib/RP2040-Button"]
+	path = lib/RP2040-Button
+	url = https://github.com/TuriSc/RP2040-Button
