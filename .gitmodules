@@ -1,3 +1,9 @@
 [submodule "lib/RP2040-Button"]
 	path = lib/RP2040-Button
 	url = https://github.com/TuriSc/RP2040-Button
+[submodule "lib/PicoVGA"]
+	path = lib/PicoVGA
+	url = https://github.com/codaris/picovga-cmake.git
+[submodule "lib/PicoSDK"]
+	path = lib/PicoSDK
+	url = https://github.com/raspberrypi/pico-sdk
