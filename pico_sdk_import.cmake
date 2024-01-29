@@ -3,6 +3,12 @@
 # This can be dropped into an external project to help locate this SDK
 # It should be include()ed prior to project()
 
+if (EXISTS ./lib/PicoSDK/pico_sdk_init.cmake)
+    set(PICO_SDK_PATH ./lib/PicoSDK/)
+    set(PICO_SDK_INIT_CMAKE_FILE ./lib/PicoSDK/pico_sdk_init.cmake)
+    message("Using PicoSDK from lib directory")
+endif ()
+
 if (DEFINED ENV{PICO_SDK_PATH} AND (NOT PICO_SDK_PATH))
     set(PICO_SDK_PATH $ENV{PICO_SDK_PATH})
     message("Using PICO_SDK_PATH from environment ('${PICO_SDK_PATH}')")

@@ -3,6 +3,11 @@
 # This can be dropped into an external project to help locate the PicoVGA SDK
 # It should be include()ed prior to project()
 
+if (EXISTS ./lib/PicoVGA/picovga.cmake)
+    set(PICOVGA_PATH ./lib/PicoVGA/)
+    message("Using PICOVGA from lib directory")
+endif ()
+
 if (DEFINED ENV{PICOVGA_PATH} AND (NOT PICOVGA_PATH))
     set(PICOVGA_PATH $ENV{PICOVGA_PATH})
     message("Using PICOVGA_PATH from environment ('${PICOVGA_PATH}')")
