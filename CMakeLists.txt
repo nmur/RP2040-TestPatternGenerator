@@ -17,7 +17,9 @@ add_subdirectory(lib/RP2040-Button button)
 # Create executable with specified source files
 add_executable(RP2040-TestPatternGenerator
     src/main.cpp
-    img/monoscope.cpp
+    img/colourbars.cpp
+    img/colourgradients.cpp
+    img/circles.cpp
     img/grid.cpp
 )
 
