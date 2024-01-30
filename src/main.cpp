@@ -8,7 +8,7 @@
 #define WIDTH	320		// screen width
 #define HEIGHT	240		// screen height
 
-#define BUTTON_CYCLE_PATTERN 2
+#define BUTTON_CYCLE_PATTERN 2 
 
 const u8* PatternArray[] = {
 	Colour_Bars,
