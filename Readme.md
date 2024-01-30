@@ -1,6 +1,12 @@
 # RP2040-TestPatternGenerator
 
-This is a simple test pattern generator that runs on the RP2040 microcontroller. It uses the [PicoVGA cmake](https://github.com/codaris/picovga-cmake) library for outputting a 15kHz 240p RGBS signal via a VGA connector.
+This is a simple test pattern generator that runs on the RP2040 microcontroller. It uses the [PicoVGA cmake](https://github.com/codaris/picovga-cmake) library for outputting a 15kHz 240p RGBS signal via a VGA connector. This tool is aimed to be used for rudimentary tests for checking basic CRT TV functionality, not for accurate calibration.
+
+Pressing a button connected to GPIO 2 cycles through the test patterns.
+
+## Limitations
+
+This program can only output colours in the RGB332 space, so each of the three colour channels (Red, Green, and Blue) are represented by 3, 3, and 2 bits, respectively. This means visible colour banding in gradient areas.
 
 ## How to Use
 
@@ -10,20 +16,12 @@ This is a simple test pattern generator that runs on the RP2040 microcontroller.
 
 ## Building
 
-1. Clone the PicoSDK and PicoVGA repositories:
-~~~
-git clone https://github.com/codaris/picovga-cmake.git
-git clone https://github.com/raspberrypi/pico-sdk
-~~~
-
-2. Set `PICOVGA_PATH` to the PicoVGA directory and the `PICO_SDK_PATH` to the PicoSDK directory in your environment.
-
-3. Generate the make files by running CMake:
+1. Generate the make files by running CMake:
 ~~~
 cmake .
 ~~~
 
-4. Build the project:
+2. Build the project:
 ~~~
 make
 ~~~
