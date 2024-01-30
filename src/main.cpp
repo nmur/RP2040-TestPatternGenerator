@@ -30,6 +30,26 @@ ALIGNED u8 Framebuffer[320*240];
 
 sCanvas PatternCanvas;
 
+void initialise_pattern()
+{
+    // Initialise canvas
+    PatternCanvas.img = (u8 *)PatternArray[PatternIndex];
+    PatternCanvas.w = WIDTH;
+    PatternCanvas.h = HEIGHT;
+    PatternCanvas.wb = WIDTH;
+    PatternCanvas.format = CANVAS_8;
+
+    // Draw pattern
+    DrawImg(&Canvas, &PatternCanvas, 0, 0, 0, 0, WIDTH, HEIGHT);
+}
+
+void draw_next_pattern()
+{
+    PatternIndex = (PatternIndex + 1) % PatternArraySize;
+    PatternCanvas.img = (u8 *)PatternArray[PatternIndex];
+    DrawImg(&Canvas, &PatternCanvas, 0, 0, 0, 0, WIDTH, HEIGHT);
+}
+
 void button_onchange(button_t *button_p){
     button_t *button = (button_t*)button_p;
 
@@ -39,7 +59,7 @@ void button_onchange(button_t *button_p){
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(sys_clock_t::now() - buttonPressTime).count();
 
         if (duration >= 3) {
-            // Reboot into BOOLSEL for flashing
+            // Reboot into BOOLSEL for flashing on long press
             reset_usb_boot(0,0);
         }
 
@@ -50,9 +70,7 @@ void button_onchange(button_t *button_p){
         buttonPressTime = sys_clock_t::now();
     }
 
-    PatternIndex = (PatternIndex + 1) % PatternArraySize;
-    PatternCanvas.img = (u8*)PatternArray[PatternIndex];
-    DrawImg(&Canvas, &PatternCanvas, 0, 0, 0, 0, WIDTH, HEIGHT);
+    draw_next_pattern();
 }
 
 int main()
@@ -60,17 +78,9 @@ int main()
 	// Initialize video mode
 	Video(DEV_NTSC, RES_QVGA, FORM_8BIT, Framebuffer);
 
-	// Initialise pattern canvas
-	PatternCanvas.img = (u8*)PatternArray[PatternIndex];
-	PatternCanvas.w = WIDTH;
-	PatternCanvas.h = HEIGHT;
-	PatternCanvas.wb = WIDTH;
-	PatternCanvas.format = CANVAS_8;
+    initialise_pattern();
 
-	// Draw pattern
-	DrawImg(&Canvas, &PatternCanvas, 0, 0, 0, 0, WIDTH, HEIGHT);
-
-	// Button handling
+    // Button handling
 	create_button(GPIO_CYCLE_PATTERN, button_onchange);
 
 	while (true)
