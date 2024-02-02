@@ -4,7 +4,7 @@ This is a simple test pattern generator that runs on the RP2040 microcontroller.
 
 ## Limitations
 
-This program can only output colours in the RGB332 space, so each of the three colour channels (Red, Green, and Blue) are represented by 3, 3, and 2 bits, respectively. This means visible colour banding in gradient areas.
+This program can only output colours in the RGB332 space, so each of the three colour channels (Red, Green, and Blue) are represented by 3, 3, and 2 bits, respectively. More information can be found [here](https://github.com/nmur/RP2040-TestPatternGenerator/wiki/Limitations).
 
 ## Initial Setup
 
@@ -15,7 +15,7 @@ This program can only output colours in the RGB332 space, so each of the three c
 ## How to Use
 
 - Press the connected button to cycle through patterns.
-- To flash a newer firmware once the device is installed in an enclosure, hold the same button for 3 seconds and release. The device will reboot into flash mode.
+- To flash a newer firmware once the device is installed in an enclosure and the BOOT button is inaccessable, connect the device to your computer, hold the same button for 3 seconds and release. The device will reboot into flash mode.
 
 ## Building
 
@@ -33,4 +33,4 @@ make
 
 - Miroslav Nemecek (Panda38@seznam.cz) for their [PicoVGA library](https://github.com/Panda381/PicoVGA)
 - Wayne Venables (codaris) for their [PicoVGA fork](https://github.com/codaris/picovga-cmake)
-- Turi Scandurra for their [RP2040-Button library](https://github.com/TuriSc/RP2040-Button)
+- Turi Scandurra (TuriSc) for their [RP2040-Button library](https://github.com/TuriSc/RP2040-Button)
