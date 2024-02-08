@@ -3,6 +3,7 @@
 #include "img/colourgradients.h"
 #include "img/circles.h"
 #include "img/grid.h"
+#include "img/white.h"
 #include "lib/RP2040-Button/button.h"
 #include "pico/bootrom.h"
 
@@ -20,6 +21,7 @@ time_point_t buttonPressTime;
 const u8* PatternArray[] = {
 	Colour_Bars,
 	Grid,
+    White,
 	Colour_Gradients,
 	Circles
 };
