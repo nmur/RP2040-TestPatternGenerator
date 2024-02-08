@@ -21,6 +21,7 @@ add_executable(RP2040-TestPatternGenerator
     img/colourgradients.cpp
     img/circles.cpp
     img/grid.cpp
+    img/white.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
