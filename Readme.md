@@ -9,6 +9,8 @@ Its main features are:
 - **Fast**: Boots and changes patterns instantly.
 - **Portable**: Very low power draw, works with a powerbank.
 
+[<img src="https://github.com/nmur/RP2040-TestPatternGenerator/assets/8315014/7c5d83b8-fa1e-4127-8eaf-c0302f727538" width="50%"/>](https://github.com/nmur/RP2040-TestPatternGenerator/assets/8315014/7c5d83b8-fa1e-4127-8eaf-c0302f727538)[<img src="https://github.com/nmur/RP2040-TestPatternGenerator/assets/8315014/ee1879ff-74e5-49d6-872a-809746e85480" width="50%"/>](https://github.com/nmur/RP2040-TestPatternGenerator/assets/8315014/ee1879ff-74e5-49d6-872a-809746e85480)
+
 ## Limitations
 
 This program can only output colours in the RGB332 space, so each of the three colour channels (Red, Green, and Blue) are represented by 3, 3, and 2 bits, respectively. More information can be found [here](https://github.com/nmur/RP2040-TestPatternGenerator/wiki/Limitations).
