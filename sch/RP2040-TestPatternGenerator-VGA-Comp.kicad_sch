@@ -1649,7 +1649,7 @@
     (property "Value" "100nF" (at 156.21 110.49 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 160.02 105.7148 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 160.02 105.7148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 106.68 0)
@@ -1658,7 +1658,7 @@
     (pin "1" (uuid f34f4dbc-9115-4fce-bf55-120e4555e589))
     (pin "2" (uuid ff58eda4-668e-4eb6-820d-878a4c51452c))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C3") (unit 1)
         )
@@ -1675,7 +1675,7 @@
     (property "Value" "100nF" (at 156.21 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 160.02 90.4748 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 160.02 90.4748 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 91.44 0)
@@ -1684,7 +1684,7 @@
     (pin "1" (uuid 5a481fe0-2bbd-4b9c-885c-e3fd15bc78f0))
     (pin "2" (uuid 689baa55-853f-4d54-b8ff-137db1bd182b))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C1") (unit 1)
         )
@@ -1701,7 +1701,7 @@
     (property "Value" "rp2040-zero" (at 41.91 90.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "kleeb:rp2040-zero-smd" (at 49.53 82.55 0)
+    (property "Footprint" "RP2040-Zero:rp2040-zero-smd" (at 49.53 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 49.53 82.55 0)
@@ -1731,7 +1731,7 @@
     (pin "20" (uuid 4e21a964-6086-4499-b42b-a76c2b91133d))
     (pin "17" (uuid ed97002a-081a-4f6d-a7d7-7ddc9a20106b))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "U1") (unit 1)
         )
@@ -1757,7 +1757,7 @@
     (pin "1" (uuid e840602b-d0ca-4950-b489-affa4bf6439c))
     (pin "2" (uuid f17bb84f-60d1-4828-9ec6-929f7a770da1))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "SW1") (unit 1)
         )
@@ -1774,7 +1774,7 @@
     (property "Value" "100nF" (at 187.96 142.24 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 192.7352 146.05 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 192.7352 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 191.77 142.24 0)
@@ -1783,7 +1783,7 @@
     (pin "1" (uuid 9344bb53-bd14-4bc4-a7e0-0ad590d04b3b))
     (pin "2" (uuid eed8e030-a739-4b9d-8fab-d2fcc2949b2f))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C5") (unit 1)
         )
@@ -1809,7 +1809,7 @@
     (pin "1" (uuid b8d1c1aa-b114-4a82-a38a-1543de1aa003))
     (pin "2" (uuid 0f6c9224-92d8-40be-8213-7ac7b9ecdbbb))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R11") (unit 1)
         )
@@ -1835,7 +1835,7 @@
     (pin "1" (uuid d570896e-780e-4487-a8d3-ebf9c6529276))
     (pin "2" (uuid a45b5b52-eac1-46fa-a474-aae3b74b028b))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R8") (unit 1)
         )
@@ -1861,7 +1861,7 @@
     (pin "1" (uuid 63143203-7649-46a0-915f-90c6bf22a118))
     (pin "2" (uuid 5d50828e-5f0d-47d7-bd61-e9fdfad74a50))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R1") (unit 1)
         )
@@ -1887,7 +1887,7 @@
     (pin "1" (uuid 489acc79-fbd5-44fd-aa6d-5e7325e91807))
     (pin "2" (uuid 0874ea25-5b01-44df-81db-40d06a0dbd76))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R7") (unit 1)
         )
@@ -1913,7 +1913,7 @@
     (pin "1" (uuid e6e37467-9fef-4e55-b709-3939af195bf8))
     (pin "2" (uuid 96b702d0-6e27-40da-9dec-65d2093c2c51))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R12") (unit 1)
         )
@@ -1939,7 +1939,7 @@
     (pin "1" (uuid 70bf1b51-6fc3-4b70-bd31-918fd4e796ac))
     (pin "2" (uuid 1af47b39-3fa3-4110-8075-a60d0d65573f))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R6") (unit 1)
         )
@@ -1965,7 +1965,7 @@
     (pin "1" (uuid 00c5f49c-4bf1-443c-81d3-4dc4c0724067))
     (pin "2" (uuid ed80ff6b-d2ca-4d8b-845b-e1f781ddc4d3))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R4") (unit 1)
         )
@@ -1991,7 +1991,7 @@
     (pin "1" (uuid 9f224503-792d-4658-810d-9e2abe85011f))
     (pin "2" (uuid e2a0fe93-1ac6-424a-a491-e1e3dc3218f7))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R13") (unit 1)
         )
@@ -2017,7 +2017,7 @@
     (pin "1" (uuid 71b3e56a-b1b4-4482-948c-ead847c04f8d))
     (pin "2" (uuid b27cb358-5e96-4ee7-bd83-c44b6fe582e7))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R9") (unit 1)
         )
@@ -2043,7 +2043,7 @@
     (pin "1" (uuid 1ba9957b-dab9-440c-b6ef-585404fcbff1))
     (pin "2" (uuid d988ee46-2743-4b75-9b70-333958e65a06))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "SW2") (unit 1)
         )
@@ -2060,7 +2060,7 @@
     (property "Value" "100nF" (at 176.53 142.24 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 181.3052 146.05 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 181.3052 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 180.34 142.24 0)
@@ -2069,7 +2069,7 @@
     (pin "1" (uuid 15a00964-b0bc-4204-9360-2042f286a2fb))
     (pin "2" (uuid e183811f-560b-4fda-a31e-35f8c9b802b3))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C4") (unit 1)
         )
@@ -2086,7 +2086,7 @@
     (property "Value" "AD724JRZ" (at 195.58 78.74 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "RW_16_ADI" (at 172.72 86.36 0)
+    (property "Footprint" "AD724:RW_16_ADI" (at 172.72 86.36 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "AD724JRZ" (at 172.72 86.36 0)
@@ -2109,7 +2109,7 @@
     (pin "11" (uuid 32f1c0d4-665f-4740-b423-0b5cf8f4dffc))
     (pin "14" (uuid 1864c042-6eab-4dce-bc52-ca9f8e4f87a6))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "U2") (unit 1)
         )
@@ -2149,7 +2149,7 @@
     (pin "3" (uuid 5d137aa4-c92e-4f3f-8380-ec5df715b60a))
     (pin "11" (uuid 8d2e2b74-e230-477f-9220-323675b58048))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "J1") (unit 1)
         )
@@ -2166,7 +2166,7 @@
     (property "Value" "100μF" (at 207.01 142.621 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 204.1652 146.05 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 204.1652 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 142.24 0)
@@ -2175,7 +2175,7 @@
     (pin "1" (uuid 9de180f5-eb83-4cb9-96f7-66062df4e7bf))
     (pin "2" (uuid 2be3fd89-f882-4697-a0a5-7e7a3aa7d8fe))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C6") (unit 1)
         )
@@ -2201,7 +2201,7 @@
     (pin "1" (uuid 1e5ed942-f950-46d7-893c-58fd268d167b))
     (pin "2" (uuid 7619028d-7b26-4a7b-b72d-5ff6c279f6e1))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R2") (unit 1)
         )
@@ -2218,7 +2218,7 @@
     (property "Value" "22pF" (at 171.45 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 167.64 77.1652 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 167.64 77.1652 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 171.45 76.2 0)
@@ -2227,7 +2227,7 @@
     (pin "1" (uuid 82adcfdc-df18-4968-a6ab-4d077b1c32bf))
     (pin "2" (uuid c445f0a2-eb72-4a84-90e0-b01f89af4243))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C7") (unit 1)
         )
@@ -2244,7 +2244,7 @@
     (property "Value" "220μF" (at 235.331 104.14 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 240.03 110.1852 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 240.03 110.1852 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 236.22 109.22 0)
@@ -2253,7 +2253,7 @@
     (pin "1" (uuid 81856ae7-2d77-421f-8a62-abe4573374a0))
     (pin "2" (uuid 3c7815f4-2236-4f12-9301-58030a6b2b32))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C8") (unit 1)
         )
@@ -2285,7 +2285,7 @@
     (pin "1" (uuid 7b83fe58-522c-42bd-8a83-1a16c40d081f))
     (pin "2" (uuid 399ac8a9-3b0e-4f9b-b74d-8e9fd4ebdbab))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "D1") (unit 1)
         )
@@ -2302,7 +2302,7 @@
     (property "Value" "100nF" (at 156.21 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 160.02 98.0948 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (at 160.02 98.0948 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 99.06 0)
@@ -2311,7 +2311,7 @@
     (pin "1" (uuid 6e4bf9d8-b9f7-4309-b105-08da7e183796))
     (pin "2" (uuid d680e3d8-b119-483e-8c16-82cbd698be15))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "C2") (unit 1)
         )
@@ -2337,7 +2337,7 @@
     (pin "1" (uuid 9e91e460-48bc-4d30-8651-2b4550d384ad))
     (pin "2" (uuid a630201c-133d-4b4a-8238-e27231574322))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R3") (unit 1)
         )
@@ -2354,7 +2354,7 @@
     (property "Value" "CVBS" (at 262.89 110.7832 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 259.08 109.22 0)
+    (property "Footprint" "RCA:CUI_RCJ-044" (at 259.08 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 259.08 109.22 0)
@@ -2363,7 +2363,7 @@
     (pin "1" (uuid 12da3356-501c-46a6-8a13-87ad6d32eec7))
     (pin "2" (uuid 9e4cf46c-16ea-4e0d-bc17-934264c00e89))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "J2") (unit 1)
         )
@@ -2389,7 +2389,7 @@
     (pin "1" (uuid c877409d-22ae-4437-bd57-f101e7715585))
     (pin "2" (uuid 9e6ca89f-d241-435e-93a3-4d3717e416bd))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R5") (unit 1)
         )
@@ -2406,7 +2406,7 @@
     (property "Value" "3.579545" (at 171.45 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 171.45 67.31 0)
+    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (at 171.45 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 171.45 67.31 0)
@@ -2415,7 +2415,7 @@
     (pin "1" (uuid f3db21ab-2392-4c0a-a50f-5979551f44dc))
     (pin "2" (uuid 3ff1e073-410d-47ad-87d6-5fa2b64a6f33))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "Y1") (unit 1)
         )
@@ -2441,7 +2441,7 @@
     (pin "1" (uuid 55cc4b6c-2402-4418-af26-b8e3c4d4275b))
     (pin "2" (uuid db88a7de-3b0c-4972-ac92-39e2e757e888))
     (instances
-      (project "RP2040-TestPatternGenerator"
+      (project "RP2040-TestPatternGenerator-VGA-Comp"
         (path "/cf6e1f46-c2e8-445c-8dae-9af0be7afdd3"
           (reference "R10") (unit 1)
         )

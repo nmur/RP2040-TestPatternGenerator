@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# RCJ-044
+#
+DEF RCJ-044 J 0 40 Y N 1 L N
+F0 "J" -300 250 50 H V L BNN
+F1 "RCJ-044" -300 -250 50 H V L BNN
+F2 "CUI_RCJ-044" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "1.02" 0 0 50 H I L BNN "PARTREV"
+F5 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F6 "11.6 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "CUI Devices" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 6 -200 -100 -200 -10 N
+P 2 0 0 6 -200 -10 -175 -10 N
+P 2 0 0 6 -175 -10 -175 100 N
+P 2 0 0 6 -175 100 -225 100 N
+P 2 0 0 6 -225 100 -225 -10 N
+P 2 0 0 6 -225 -10 -200 -10 N
+P 2 0 0 6 -25 100 -75 50 N
+P 2 0 0 6 -75 50 -125 100 N
+P 2 0 0 10 300 -200 300 200 N
+P 2 0 0 6 -25 100 300 100 N
+P 2 0 0 6 -200 -100 300 -100 N
+S -375 -200 225 200 0 0 10 f
+X ~ 1 500 -100 200 L 40 40 0 0 P 
+X ~ 2 500 100 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

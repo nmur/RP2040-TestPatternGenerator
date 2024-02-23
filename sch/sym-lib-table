@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AS724")(type "KiCad")(uri "${KIPRJMOD}/lib/AD724JRZ/KiCADv6/2024-02-21_13-35-26.kicad_sym")(options "")(descr ""))
+  (lib (name "RP2040-Zero")(type "KiCad")(uri "${KIPRJMOD}/lib/kleeb/mcu.kicad_sym")(options "")(descr ""))
+)
